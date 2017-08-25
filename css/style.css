@@ -1,0 +1,156 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+h1,
+h3 {
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+header {
+    background-color: white;
+    height: 100%;
+}
+
+#progress-wrap {
+    vertical-align: middle;
+    width: 100%;
+}
+
+#myProgress {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myBar {
+    width: 1%;
+    height: 10px;
+    background-color: black;
+}
+
+#home-wrap {
+    display: none;
+}
+
+.center-cont {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#name {
+    color: white;
+    position: absolute;
+    top: -2em;
+    left: 21.5em;
+    z-index: 1000;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    /*background-color: #333;*/
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 9em;
+    transform: rotate(45deg);
+}
+
+.menu-item {
+    position: absolute;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+#top {
+    position: absolute;
+    top: 0em;
+    left: 11em;
+}
+
+#left {
+    position: absolute;
+    top: 11em;
+    left: -1.5em;
+    transform: rotate(270deg);
+}
+
+#right {
+    position: absolute;
+    top: 11em;
+    left: 22em;
+    transform: rotate(90deg);
+}
+
+#bottom {
+    position: absolute;
+    top: 24em;
+    left: 10em;
+    transform: rotate(180deg);
+}
+
+#name,
+.menu-item a {
+    transition: padding .2s linear;
+    transition: letter-spacing .2s ease-in-out;
+    padding: 0;
+}
+
+
+.menu-item a:hover {
+    padding-top: 5px;
+    letter-spacing: 5px;
+}
+
+#name:hover {
+    letter-spacing: 5px;
+}
+
+
+
+
+
+/* --------Background Video styles--------*/
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('http://www.fillmurray.com/700/500') center center / cover no-repeat;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+
+
+
+
+/*----------END OF BACKGROUND VIDEO STYLES---------*/
