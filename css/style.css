@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #ADD8E6;
 }
 
 body,
@@ -40,7 +41,6 @@ header {
 
 #home-wrap {
     display: none;
-    background-color: #ADD8E6;
 }
 
 .center-cont {
@@ -129,6 +129,7 @@ header {
 
 
 
+
 /* --------Background Video styles--------*/
 
 #video-background {
@@ -150,6 +151,7 @@ header {
         display: none;
     }
 }
+
 
 
 
