@@ -1,13 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ADD8E6;
+    /*background-color: #ADD8E6;*/
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    color: black;
 }
 
 h1,
@@ -16,146 +15,114 @@ h3 {
     font-stretch: expanded;
 }
 
-header {
-    background-color: white;
+.upper {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+#home {
+    margin-bottom: 2em;
+}
+
+.sidenav {
+    margin-top: 4em;
     height: 100%;
-}
-
-#progress-wrap {
-    vertical-align: middle;
-    width: 100%;
-}
-
-#myProgress {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#myBar {
-    width: 1%;
-    height: 10px;
-    background-color: black;
-}
-
-#home-wrap {
-    display: none;
-}
-
-.center-cont {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-}
-
-#name {
-    color: white;
-    position: absolute;
-    top: -2em;
-    left: 21.5em;
-    z-index: 1000;
-}
-
-.square {
-    width: 500px;
-    height: 500px;
-    /*background-color: #333;*/
-    margin: 0 auto;
-    vertical-align: middle;
-    margin-top: 9em;
-    transform: rotate(45deg);
-}
-
-.menu-item {
-    position: absolute;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 4px;
-}
-
-#top {
-    position: absolute;
-    top: 0em;
-    left: 11em;
-}
-
-#left {
-    position: absolute;
-    top: 11em;
-    left: -1.5em;
-    transform: rotate(270deg);
-}
-
-#right {
-    position: absolute;
-    top: 11em;
-    left: 22em;
-    transform: rotate(90deg);
-}
-
-#bottom {
-    position: absolute;
-    top: 24em;
-    left: 10em;
-    transform: rotate(180deg);
-}
-
-#name,
-.menu-item a {
-    transition: padding .2s linear;
-    transition: letter-spacing .2s ease-in-out;
-    padding: 0;
-}
-
-
-.menu-item a:hover {
-    padding-top: 5px;
-    letter-spacing: 5px;
-}
-
-#name:hover {
-    letter-spacing: 5px;
-}
-
-
-
-
-
-
-
-/* --------Background Video styles--------*/
-
-#video-background {
+    width: 14em;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    text-align: right;
+    text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('http://www.fillmurray.com/700/500') center center / cover no-repeat;
-    }
-    .fullscreen-bg__video {
-        display: none;
-    }
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    letter-spacing: .4rem;
+}
+
+#contentCont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 3em;
+    margin-left: 12em;
+    text-align: center;
+    font-size: 25px;
+}
+
+#pageTitle {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    padding-top: 6px;
+    padding-bottom: 2em;
+}
+
+#contentPage {
+    margin-top: 2em;
+    background-color: #ADD8E6;
+    height: 24em;
+    width: 43em;
+    display: table;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+p {
+    color: white;
+}
+
+#aboutPage {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
+#nyc {
+    color: blue;
+}
 
+#mediaArts {
+    color: red;
+}
 
+#creative {
+    color: yellow;
+}
 
+#design_text {
+    color: green;
+}
 
+#making_text {
+    color: turquoise;
+}
 
-/*----------END OF BACKGROUND VIDEO STYLES---------*/
+#thinking_text {
+    color: magenta;
+}
+
+#cool_text {
+    color: brown;
+}
+
+.soft-pad {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+span:hover {
+    cursor: pointer;
+}
