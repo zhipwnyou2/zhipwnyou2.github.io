@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet"> -->
     <!-- <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -37,7 +39,7 @@
             <li class="nav-item"><a id="fashion" href="#">Fashion</a> </li>
             <li class="nav-item"><a id="others" href="#">Others</a> </li>
         </div>
-        <div id="contentPage">
+        <div id="contentPage" class="transition">
             <div id="aboutPage" class="active">
                 <div class="row">
                     <div class="col right soft-pad">
@@ -130,6 +132,19 @@
                     </div>
                 </div>
             </div>
+            <div id="videoPage" class="hidden">
+                <div class="main-carousel" data-flickity='{ "wrapAround": true, "pageDots": false }'>
+                    <div class="carousel-cell">
+                        <iframe width="975" height="420" src="https://www.youtube.com/embed/S1QBlxGuXYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-cell">
+                        <iframe width="975" height="420" src="https://www.youtube.com/embed/b1kkz-jBUgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-cell">
+                        <iframe width="975" height="420" src="https://www.youtube.com/embed/WXp6Xu-H2Uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
             <div id="contactPage" class="hidden">
                 <div class="row" id="contactContTop">
                     <h3 style="margin: 0 auto; clear:both;">social networking</h3>
@@ -146,6 +161,9 @@
                 <form id="emailstuff" method="POST" action="https://formspree.io/takethiszhireously@gmail.com">
                     <div class="form-group">
                         <input class="form-control" type="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="_subject" value="Email from zhiwliang.com" />
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" name="message" placeholder="Your message"></textarea>

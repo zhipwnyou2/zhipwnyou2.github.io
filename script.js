@@ -1,9 +1,14 @@
 $(document).ready(function() {
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
 
     // transitions not working...
     $("#nyc").hover(function() {
         $('#contentPage').css('background-image', 'url("' + 'https://images.solecollector.com/complex/images/c_fill,f_auto,fl_lossy,q_auto,w_800/mtnz7sidjsxxyuyqnogb/nike-air-max-1-og-sport-red-release-date-908375-103' + '")');
-        $('#contentPage').css("transition", "background-image 5s cubic-bezier(0.4, 0, 1, 1)");
+        // $('#contentPage').css("transition", "background - image 5 s cubic - bezier(0.4, 0, 1, 1)");
     }, function() {
         $("#contentPage").css('background-image', 'none');
         $('#contentPage').css("transition", "background-image 2s cubic-bezier(0.4, 0, 1, 1)");
@@ -41,7 +46,7 @@ $(document).ready(function() {
     //---
     $("#about").click(function() {
         if ($('#aboutPage').css('display') != "table-cell") {
-            $("#aboutPage").toggle();
+            $("#aboutPage").toggle(700);
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
@@ -57,7 +62,7 @@ $(document).ready(function() {
     });
     $("#photo").click(function() {
         if ($('#photoPage').css('display') != "block") {
-            $("#photoPage").toggle();
+            $("#photoPage").toggle(700);
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
@@ -74,12 +79,29 @@ $(document).ready(function() {
     });
     $("#places").click(function() {
         if ($('#placesPage').css('display') != "block") {
-            $("#placesPage").toggle();
+            $("#placesPage").toggle(700);
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
             $("#placesPage").addClass('active');
-            $('#pageTitle').text("Photos/Faces");
+            $('#pageTitle').text("Photos/Places");
+
+        } else {
+            console.log('do nothing')
+        }
+
+    });
+    $("#video").click(function() {
+        if ($('#videoPage').css('display') != "block") {
+            $("#videoPage").toggle(500);
+            var act = document.getElementsByClassName('active');
+            $(act[0]).toggle();
+            act[0].classList.remove('active');
+
+            $("#videoPage").addClass('active');
+            $('.horiNav').css('visibility', 'hidden')
+
+            $('#pageTitle').text("Video");
 
         } else {
             console.log('do nothing')
@@ -88,7 +110,7 @@ $(document).ready(function() {
     });
     $("#contact").click(function() {
         if ($('#contactPage').css('display') != "block") {
-            $("#contactPage").toggle();
+            $("#contactPage").toggle(500);
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');

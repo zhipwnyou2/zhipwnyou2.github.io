@@ -190,6 +190,10 @@ span:hover {
     margin-right: 20px;
 }
 
+#videoPage {
+    padding-top: 2em;
+}
+
 #contactPage {
     margin-top: 3em;
 }
@@ -244,4 +248,8 @@ a:hover {
 #contactContTop {
     display: block !important;
     margin-bottom: 5em;
+}
+
+.transition {
+    transition: background-image 5s cubic-bezier(0.4, 0, 1, 1);
 }
