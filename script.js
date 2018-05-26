@@ -47,22 +47,23 @@ $(document).ready(function() {
     $("#about").click(function() {
         if ($('#aboutPage').css('display') != "table-cell") {
             $("#aboutPage").toggle();
-            var act = document.getElementsByClassName('active');
+            var act = document.getElementsByClassName('active_cont');
             $(act[0]).toggle();
-            act[0].classList.remove('active');
-            $("#aboutPage").addClass('active');
+            act[0].classList.remove('active_cont');
+            $("#aboutPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'hidden')
             $('#pageTitle').text("About");
         }
 
     });
+    // start of photo functionalities
     $("#photo").click(function() {
         if ($('#photoPage').css('display') != "block") {
             $("#photoPage").toggle();
-            var act = document.getElementsByClassName('active');
+            var act = document.getElementsByClassName('active_cont');
             $(act[0]).toggle();
-            act[0].classList.remove('active');
-            $("#photoPage").addClass('active');
+            act[0].classList.remove('active_cont');
+            $("#photoPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'visible')
             $('#pageTitle').text("Photo");
 
@@ -74,29 +75,99 @@ $(document).ready(function() {
     $("#places").click(function() {
         if ($('#placesPage').css('display') != "block") {
             $("#placesPage").toggle();
-            var act = document.getElementsByClassName('active');
+            var act = document.getElementsByClassName('active_cont');
             $(act[0]).toggle();
-            act[0].classList.remove('active');
-            $("#placesPage").addClass('active');
+            act[0].classList.remove('active_cont');
+            $("#placesPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Places");
 
         } else {
             console.log('do nothing')
         }
     });
+    $("#faces").click(function() {
+        if ($('#facesPage').css('display') != "block") {
+            $("#facesPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            act[0].classList.remove('active_cont');
+            $("#facesPage").addClass('active_cont');
+            $('#pageTitle').text("Photos/Faces");
+
+        } else {
+            console.log('do nothing')
+        }
+    });
+    $("#spaces").click(function() {
+        if ($('#spacesPage').css('display') != "block") {
+            $("#spacesPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            act[0].classList.remove('active_cont');
+            $("#spacesPage").addClass('active_cont');
+            $('#pageTitle').text("Photos/Spaces");
+
+        } else {
+            console.log('do nothing')
+        }
+    });
+    $("#sneakers").click(function() {
+        if ($('#placesPage').css('display') != "block") {
+            $("#placesPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            act[0].classList.remove('active_cont');
+            $("#placesPage").addClass('active_cont');
+            $('#pageTitle').text("Photos/Sneakers");
+
+        } else {
+            console.log('do nothing')
+        }
+    });
+    $("#fashion").click(function() {
+        if ($('#fashionPage').css('display') != "block") {
+            $("#fashionPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            act[0].classList.remove('active_cont');
+            $("#fashionPage").addClass('active_cont');
+            $('#pageTitle').text("Photos/Fashion");
+
+        } else {
+            console.log('do nothing')
+        }
+    });
+    $("#others").click(function() {
+        if ($('#othersPage').css('display') != "block") {
+            $("#othersPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            act[0].classList.remove('active_cont');
+            $("#othersPage").addClass('active_cont');
+            $('#pageTitle').text("Photos/Others");
+
+        } else {
+            console.log('do nothing')
+        }
+    });
+    // end of photo functionalities. 
     $("#video").click(function() {
         if ($('#videoPage').css('display') != "block") {
             $("#videoPage").toggle();
-            var act = document.getElementsByClassName('active');
+            var act = document.getElementsByClassName('active_cont');
             $(act[0]).toggle();
-            act[0].classList.remove('active');
-            $("#videoPage").addClass('active');
+            console.log('in video');
+            console.log(act);
+
+            act[0].classList.remove('active_cont');
+            $("#videoPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'hidden')
             $('#pageTitle').text("Video");
         } else {
             console.log('do nothing')
         }
     });
+    $('#vid-car').css("display", "block");
     // $("#contact").click(function() {
     //     if ($('#contactPage').css('display') != "block") {
     //         $("#contactPage").toggle(500);
@@ -114,10 +185,12 @@ $(document).ready(function() {
     $("#contact").click(function() {
         if ($('#contactPage').css('display') != "block") {
             $("#contactPage").toggle();
-            var act = document.getElementsByClassName('active');
+            var act = document.getElementsByClassName('active_cont');
             $(act[0]).toggle();
-            act[0].classList.remove('active');
-            $("#contactPage").addClass('active');
+            console.log('in contact: ');
+            console.log(act);
+            act[0].classList.remove('active_cont');
+            $("#contactPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'hidden')
             $('#pageTitle').text("Contact");
         } else {

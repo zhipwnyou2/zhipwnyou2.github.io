@@ -159,6 +159,10 @@ span:hover {
     overflow: scroll;
     height: 480px;
 }
+.photoCopy {
+    overflow: scroll;
+    height: 480px;
+}
 
 .row {
     margin-left: 0 !important;
@@ -191,7 +195,7 @@ span:hover {
 }
 
 #videoPage {
-    padding-top: 2em;
+    padding-top: 5em;
 }
 
 #contactPage {
