@@ -253,3 +253,7 @@ a:hover {
 .transition {
     transition: background-image 5s cubic-bezier(0.4, 0, 1, 1);
 }
+
+.carousel-indicators {
+    bottom: -27px !important;
+}

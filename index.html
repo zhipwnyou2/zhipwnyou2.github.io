@@ -133,16 +133,31 @@
                 </div>
             </div>
             <div id="videoPage" class="hidden">
-                <div class="main-carousel" data-flickity='{ "wrapAround": true, "pageDots": false }'>
-                    <div class="carousel-cell">
-                        <iframe width="975" height="420" src="https://www.youtube.com/embed/S1QBlxGuXYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div id="carouselVid" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselVid" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselVid" data-slide-to="1"></li>
+                        <li data-target="#carouselVid" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <iframe width="975" height="420" src="https://www.youtube.com/embed/Jz8h7WskIvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="975" height="420" src="https://www.youtube.com/embed/Jz8h7WskIvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="975" height="420" src="https://www.youtube.com/embed/Jz8h7WskIvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="carousel-cell">
-                        <iframe width="975" height="420" src="https://www.youtube.com/embed/b1kkz-jBUgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-cell">
-                        <iframe width="975" height="420" src="https://www.youtube.com/embed/WXp6Xu-H2Uc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselVid" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselVid" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
             <div id="contactPage" class="hidden">

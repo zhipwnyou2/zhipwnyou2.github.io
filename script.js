@@ -46,30 +46,24 @@ $(document).ready(function() {
     //---
     $("#about").click(function() {
         if ($('#aboutPage').css('display') != "table-cell") {
-            $("#aboutPage").toggle(700);
+            $("#aboutPage").toggle();
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
             $("#aboutPage").addClass('active');
-
-            $('#pageTitle').text("About");
             $('.horiNav').css('visibility', 'hidden')
-
-
-
+            $('#pageTitle').text("About");
         }
 
     });
     $("#photo").click(function() {
         if ($('#photoPage').css('display') != "block") {
-            $("#photoPage").toggle(700);
+            $("#photoPage").toggle();
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
-
             $("#photoPage").addClass('active');
             $('.horiNav').css('visibility', 'visible')
-
             $('#pageTitle').text("Photo");
 
         } else {
@@ -79,7 +73,7 @@ $(document).ready(function() {
     });
     $("#places").click(function() {
         if ($('#placesPage').css('display') != "block") {
-            $("#placesPage").toggle(700);
+            $("#placesPage").toggle();
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
@@ -89,41 +83,46 @@ $(document).ready(function() {
         } else {
             console.log('do nothing')
         }
-
     });
     $("#video").click(function() {
         if ($('#videoPage').css('display') != "block") {
-            $("#videoPage").toggle(500);
+            $("#videoPage").toggle();
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
-
             $("#videoPage").addClass('active');
             $('.horiNav').css('visibility', 'hidden')
-
             $('#pageTitle').text("Video");
-
         } else {
             console.log('do nothing')
         }
-
     });
+    // $("#contact").click(function() {
+    //     if ($('#contactPage').css('display') != "block") {
+    //         $("#contactPage").toggle(500);
+    //         var act = document.getElementsByClassName('active');
+    //         $(act[0]).toggle();
+    //         act[0].classList.remove('active');
+    //         $("#contactPage").addClass('active');
+    //         $('.horiNav').css('visibility', 'hidden')
+    //         $('#pageTitle').text("Contact");
+    //     } else {
+    //         console.log('do nothing')
+    //     }
+    // });
+
     $("#contact").click(function() {
         if ($('#contactPage').css('display') != "block") {
-            $("#contactPage").toggle(500);
+            $("#contactPage").toggle();
             var act = document.getElementsByClassName('active');
             $(act[0]).toggle();
             act[0].classList.remove('active');
-
             $("#contactPage").addClass('active');
             $('.horiNav').css('visibility', 'hidden')
-
             $('#pageTitle').text("Contact");
-
         } else {
             console.log('do nothing')
         }
-
     });
 
 });
