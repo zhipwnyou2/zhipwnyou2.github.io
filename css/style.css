@@ -155,6 +155,9 @@ span:hover {
     display: block !important;
 }
 
+a > img {
+    height: 100%;
+}
 #photoPage {
     overflow: scroll;
     height: 480px;
@@ -172,26 +175,33 @@ span:hover {
 .colPhoto {
     height: 225px !important;
     padding: 0 !important;
-    margin: 10px;
-    background-color: #777;
+    margin: 5px;
+    /*background-color: #777;*/
 }
 
 .imageCont {
     height: 200px;
     width: 300px;
-    background-color: #999;
+    /*background-color: #999;*/
     margin: 5px;
 }
 
 .horiNav {
     margin-top: 25px;
     visibility: hidden;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .horiNav>li {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.horiNav a {
+    color: #ADD8E6 !important;
+    
 }
 
 #videoPage {
