@@ -6,12 +6,18 @@ $(document).ready(function() {
     });
 
     // transitions not working...
+    $(function() {
+        $('#nyc').hover(function() { 
+            $('#div2').fadeIn(); 
+        }, function() { 
+            $('#div2').fadeOut(); 
+        });
+    });
+
     $("#nyc").hover(function() {
         $('#contentPage').css('background-image', 'url("' + 'https://images.solecollector.com/complex/images/c_fill,f_auto,fl_lossy,q_auto,w_800/mtnz7sidjsxxyuyqnogb/nike-air-max-1-og-sport-red-release-date-908375-103' + '")');
-        // $('#contentPage').css("transition", "background - image 5 s cubic - bezier(0.4, 0, 1, 1)");
     }, function() {
         $("#contentPage").css('background-image', 'none');
-        $('#contentPage').css("transition", "background-image 2s cubic-bezier(0.4, 0, 1, 1)");
     });
     $("#mediaArts").hover(function() {
         $('#contentPage').css('background-image', 'url("' + 'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/a/i/air-jordan-2-retro-infrared-23-black-infrared-23-pr-pltnm-wht-011906_1.png' + '")');
@@ -44,7 +50,7 @@ $(document).ready(function() {
         $("#contentPage").css('background-image', 'none');
     });
     //---
-    $("#about").click(function() {
+    $("#home").click(function() {
         if ($('#aboutPage').css('display') != "table-cell") {
             $("#aboutPage").toggle();
             var act = document.getElementsByClassName('active_cont');
@@ -67,9 +73,7 @@ $(document).ready(function() {
             $('.horiNav').css('visibility', 'visible')
             $('#pageTitle').text("Photo");
 
-        } else {
-            console.log('do nothing')
-        }
+        }   
 
     });
     $("#places").click(function() {
@@ -81,9 +85,7 @@ $(document).ready(function() {
             $("#placesPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Places");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     $("#faces").click(function() {
         if ($('#facesPage').css('display') != "block") {
@@ -94,9 +96,7 @@ $(document).ready(function() {
             $("#facesPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Faces");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     $("#spaces").click(function() {
         if ($('#spacesPage').css('display') != "block") {
@@ -107,9 +107,7 @@ $(document).ready(function() {
             $("#spacesPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Spaces");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     $("#sneakers").click(function() {
         if ($('#placesPage').css('display') != "block") {
@@ -120,9 +118,7 @@ $(document).ready(function() {
             $("#placesPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Sneakers");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     $("#fashion").click(function() {
         if ($('#fashionPage').css('display') != "block") {
@@ -133,9 +129,7 @@ $(document).ready(function() {
             $("#fashionPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Fashion");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     $("#others").click(function() {
         if ($('#othersPage').css('display') != "block") {
@@ -146,9 +140,7 @@ $(document).ready(function() {
             $("#othersPage").addClass('active_cont');
             $('#pageTitle').text("Photos/Others");
 
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
     // end of photo functionalities. 
     $("#video").click(function() {
@@ -163,24 +155,24 @@ $(document).ready(function() {
             $("#videoPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'hidden')
             $('#pageTitle').text("Video");
-        } else {
-            console.log('do nothing')
-        }
+        } 
+    });
+
+    $("#project").click(function() {
+        if ($('#projectPage').css('display') != "block") {
+            $("#projectPage").toggle();
+            var act = document.getElementsByClassName('active_cont');
+            $(act[0]).toggle();
+            console.log('in proj');
+            console.log(act);
+
+            act[0].classList.remove('active_cont');
+            $("#projectPage").addClass('active_cont');
+            $('.horiNav').css('visibility', 'hidden')
+            $('#pageTitle').text("Project");
+        } 
     });
     $('#vid-car').css("display", "block");
-    // $("#contact").click(function() {
-    //     if ($('#contactPage').css('display') != "block") {
-    //         $("#contactPage").toggle(500);
-    //         var act = document.getElementsByClassName('active');
-    //         $(act[0]).toggle();
-    //         act[0].classList.remove('active');
-    //         $("#contactPage").addClass('active');
-    //         $('.horiNav').css('visibility', 'hidden')
-    //         $('#pageTitle').text("Contact");
-    //     } else {
-    //         console.log('do nothing')
-    //     }
-    // });
 
     $("#contact").click(function() {
         if ($('#contactPage').css('display') != "block") {
@@ -193,9 +185,7 @@ $(document).ready(function() {
             $("#contactPage").addClass('active_cont');
             $('.horiNav').css('visibility', 'hidden')
             $('#pageTitle').text("Contact");
-        } else {
-            console.log('do nothing')
-        }
+        } 
     });
 
 });

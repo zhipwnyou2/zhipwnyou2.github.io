@@ -35,8 +35,8 @@ textarea {
 .sidenav {
     margin-top: 4em;
     height: 100%;
-    width: 11em;
-    position: fixed;
+    width: 12em;
+    position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -55,13 +55,15 @@ textarea {
 }
 
 #contentCont {
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
     margin-top: 3em;
     /*margin-left: 12em;*/
     text-align: center;
     font-size: 15px;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 #pageTitle {
@@ -81,15 +83,17 @@ textarea {
     display: table;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-transition: background-image 2s cubic-bezier(0.4, 0, 1, 1);
-    transition: background-image 2s cubic-bezier(0.4, 0, 1, 1);
     overflow: scroll;
+    margin-left: 16em;
+}
+
+img{
+    transition: background-image 0.2s ease-in-out;
+
 }
 
 #contentPage:hover {
-    -webkit-transition: background-image 2s cubic-bezier(0.4, 0, 1, 1);
-
-    transition: background-image 2s cubic-bezier(0.4, 0, 1, 1);
+    transition: background-image 0.2s ease-in-out;
 }
 
 .right {
@@ -139,8 +143,8 @@ p {
 }
 
 .soft-pad {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
 }
 
 span:hover {
@@ -156,12 +160,19 @@ span:hover {
 }
 
 a > img {
-    height: 100%;
+    height: 65%;
 }
 #photoPage {
     overflow: scroll;
     height: 480px;
+    padding-top: 5em;
 }
+
+#facesPage, #spacesPage, #placesPage, #sneakersPage, #fashionPage, #othersPage {
+    padding-top: 5em;
+
+}
+
 .photoCopy {
     overflow: scroll;
     height: 480px;
@@ -191,6 +202,7 @@ a > img {
     visibility: hidden;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    min-width: 91em;
 }
 
 .horiNav>li {
@@ -226,7 +238,7 @@ a > img {
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .fa-youtube {
@@ -270,4 +282,10 @@ a:hover {
 
 .carousel-indicators {
     bottom: -27px !important;
+}
+
+.col2 {
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
