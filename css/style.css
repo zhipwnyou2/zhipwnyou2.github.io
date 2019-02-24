@@ -55,10 +55,10 @@ textarea {
 }
 
 #contentCont {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     bottom: 0;
-    margin-top: 3em;
+    margin-top: 4.5em;
     /*margin-left: 12em;*/
     text-align: center;
     font-size: 15px;
@@ -70,8 +70,7 @@ textarea {
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: .4rem;
-    padding-top: 6px;
-    padding-bottom: 2em;
+    position: absolute;
 }
 
 #contentPage {
@@ -79,7 +78,7 @@ textarea {
     margin-top: 1.5em;
     background-color: #ADD8E6;
     height: 32em;
-    width: 65em;
+    width: calc(100% - 31.5em);
     display: table;
     background-repeat: no-repeat;
     background-position: center;
@@ -198,7 +197,7 @@ a > img {
 }
 
 .horiNav {
-    margin-top: 25px;
+    margin-top: 30px;
     visibility: hidden;
     text-transform: uppercase;
     letter-spacing: .2rem;
