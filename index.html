@@ -1,409 +1,814 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> Zhi Liang </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+  <head>
+    <title>Zhi Liang</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet" />
     <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <div class="sidenav">
-        <div class="nav-cont">
-            <a href="#" id="home"> Zhi</a>
-            <a href="#" id="photo"> Photo</a>
-            <a href="#" id="video"> Video</a>
-            <a href="#" id="project"> Project</a>
-            <a href="#" id="contact"> Contact</a>
-        </div>
+      <div class="nav-cont">
+        <a href="#" id="home"> Zhi</a>
+        <a href="#" id="photo"> Photo</a>
+        <a href="#" id="video"> Video</a>
+        <a href="#" id="project"> Project</a>
+        <a href="#" id="contact"> Contact</a>
+      </div>
     </div>
     <div id="contentCont">
-        <span id="pageTitle">ABOUT</span>
-        <div class="horiNav">
-            <li class="nav-item"><a id="places" href="#"> Places</a> </li>
-            <li class="nav-item"><a id="faces" href="#">Faces </a></li>
-            <li class="nav-item"><a id="spaces" href="#">Spaces </a></li>
-            <li class="nav-item"><a id="sneakers" href="#">Sneakers </a></li>
-            <li class="nav-item"><a id="fashion" href="#">Fashion</a> </li>
-            <li class="nav-item"><a id="others" href="#">Others</a> </li>
+      <span id="pageTitle">ABOUT</span>
+      <div class="horiNav">
+        <li class="nav-item"><a id="places" href="#"> Places</a></li>
+        <li class="nav-item"><a id="faces" href="#">Faces </a></li>
+        <li class="nav-item"><a id="spaces" href="#">Spaces </a></li>
+        <li class="nav-item"><a id="sneakers" href="#">Sneakers </a></li>
+        <li class="nav-item"><a id="fashion" href="#">Fashion</a></li>
+        <li class="nav-item"><a id="others" href="#">Others</a></li>
+      </div>
+      <div id="contentPage" class="transition">
+        <div id="aboutPage" class="active_cont">
+          <div class="row">
+            <div class="col right soft-pad">
+              <p class="upper"><span id="nyc">New York City</span></p>
+              <p>&nbsp</p>
+              <p class="upper"><span id="creative">Creative</span></p>
+              <p>&nbsp</p>
+              <p class="upper"><span id="thinking_text">Think</span></p>
+              <p>&nbsp</p>
+              <p class="upper"><span id="cool_text"> Cool</span></p>
+            </div>
+            <div class="col left soft-pad">
+              <p class="upper">Based</p>
+              <p class="upper">Media<span id="mediaArts"> Arts</span></p>
+              <p class="upper">Direction</p>
+              <p class="upper">Des<span id="design_text">ign</span></p>
+              <p class="upper">ing</p>
+
+              <p class="upper">Making<span id="making_text"> Stuff</span></p>
+              <p class="upper">Stuff</p>
+            </div>
+          </div>
         </div>
-        <div id="contentPage" class="transition">
-            <div id="aboutPage" class="active_cont">
-                <div class="row">
-                    <div class="col right soft-pad">
-                        <p class="upper"><span id="nyc">New York City</span></p>
-                        <p>&nbsp</p>
-                        <p class="upper"><span id="creative">Creative</span></p>
-                        <p>&nbsp</p>
-                        <p class="upper"><span id="thinking_text">Think</span></p>
-                        <p>&nbsp</p>
-                        <p class="upper"><span id="cool_text"> Cool</span></p>
-                    </div>
-                    <div class="col left soft-pad">
-                        <p class="upper">Based</p>
-                        <p class="upper">Media<span id="mediaArts"> Arts</span></p>
-                        <p class="upper">Direction</p>
-                        <p class="upper">Des<span id="design_text">ign</span></p>
-                        <p class="upper">ing</p>
-                        
-                        
-                        <p class="upper">Making<span id="making_text"> Stuff</span></p>
-                        <p class="upper">Stuff</p>
-                    </div>
-                </div>
+        <div id="photoPage" class="hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
             </div>
-            <div id="photoPage" class="hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
             </div>
-            <div id="placesPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        <a href="img/photos/OWHK.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/OWHK.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/satin2.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/satin2.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/satin2.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/satin2.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/225/225" data-lightbox="photo" data-title="My caption"> <img src="https://www.fillmurray.com/g/225/225"></a>
-                    </div>
-                </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
             </div>
-            <div id="facesPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
             </div>
-            <div id="spacesPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="spaces" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="spaces" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="spaces" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
             </div>
-            <div id="sneakersPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
             </div>
-            <div id="fashionPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="fashion" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="places" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="https://www.fillmurray.com/g/305/225" data-lightbox="places" data-title="My caption"> <img src="https://www.fillmurray.com/g/305/225"></a>
-                    </div>
-                </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
             </div>
-            <div id="othersPage" class="photoCopy hidden">
-                <div class="row">
-                    <div class="col2 colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col colPhoto">
-                        
-                        <a href="img/photos/88.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/88.jpg"></a>
-
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-1.jpg" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-1.jpg"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-2.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-2.png"></a>
-                    </div>
-                    <div class="col colPhoto">
-                        <a href="img/photos/Untitled-18.png" data-lightbox="photo" data-title="My caption"> <img src="img/photos/Untitled-18.png"></a>
-                    </div>
-                </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="photo"
+                data-title="Photos"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
             </div>
-            <div id="videoPage" class="hidden">
-                <div id="carouselVid" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselVid" data-slide-to="0"></li>
-                        <li data-target="#carouselVid" data-slide-to="1"></li>
-                        <li data-target="#carouselVid" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active ">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q7htsIujacw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe src="https://player.vimeo.com/video/310988814?portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe src="https://player.vimeo.com/video/200401619?portrait=0" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselVid" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselVid" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <div id="projectPage" class="hidden">
-                <div class="row">
-                    <a href="#"><h2>BROOKLYN UNITED TIES</h2></a>
-                    <a href="#"><h2>HERBAL ESSENCES</h2></a>
-                    <a href="#"><h2>ESTEE LAUDER</h2></a>
-                    <a href="#"><h2>BELT PARKWAY RUN CLUB</h2></a>
-
-                </div>
-            </div>
-            <div id="contactPage" class="hidden">
-                <div class="row" id="contactContTop">
-                    <h3 style="margin: 0 auto; clear:both;">social networking</h3>
-                    <br/>
-                    <div class="links">
-                        <a href="#" class="fa fa-youtube"></a>
-                        <a href="mailto:takethiszhireously@gmail.com" class="fa fa-envelope"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="https://www.linkedin.com/in/zhi-liang/" class="fa fa-linkedin"></a>
-                    </div>
-                </div>
-                <h3 style="margin: 0 auto;">express mail</h3>
-                <br>
-                <form id="emailstuff" method="POST" action="https://formspree.io/takethiszhireously@gmail.com">
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="email" placeholder="Your email">
-                    </div>
-                    <div class="form-group">
-                        <input type="hidden" name="_subject" value="Email from zhiwliang.com" />
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="submit">send!!!</button>
-                </form>
-            </div>
+          </div>
         </div>
+        <div id="placesPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="places"
+                data-title="Photos // Places"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="places"
+                data-title="Photos // Places"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/OWHK.jpg"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/OWHK.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/satin2.jpg"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/satin2.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/satin2.jpg"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/satin2.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="https://www.fillmurray.com/g/225/225"
+                data-lightbox="places"
+                data-title="Photos // Spaces"
+              >
+                <img src="https://www.fillmurray.com/g/225/225"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="facesPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="faces"
+                data-title="Photos // Faces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="spacesPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="spaces"
+                data-title="Photos // Spaces"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="sneakersPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Sneakers"
+                data-title="Photos // Sneakers"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="fashionPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Fashion"
+                data-title="Photos // Fashion"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="othersPage" class="photoCopy hidden">
+          <div class="row">
+            <div class="col2 colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col colPhoto">
+              <a
+                href="img/photos/88.jpg"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/88.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-1.jpg"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-1.jpg"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-2.png"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-2.png"
+              /></a>
+            </div>
+            <div class="col colPhoto">
+              <a
+                href="img/photos/Untitled-18.png"
+                data-lightbox="Others"
+                data-title="Photos // Others"
+              >
+                <img src="img/photos/Untitled-18.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div id="videoPage" class="hidden">
+          <div
+            id="carouselVid"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <ol class="carousel-indicators">
+              <li data-target="#carouselVid" data-slide-to="0"></li>
+              <li data-target="#carouselVid" data-slide-to="1"></li>
+              <li data-target="#carouselVid" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active ">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/q7htsIujacw"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe
+                  src="https://player.vimeo.com/video/310988814?portrait=0"
+                  width="560"
+                  height="315"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe
+                  src="https://player.vimeo.com/video/200401619?portrait=0"
+                  width="560"
+                  height="315"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselVid"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselVid"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div id="projectPage" class="hidden">
+          <div id="projMenu" class="row">
+            <!-- <a href="#"><h2 id="but">BROOKLYNUNITEDTIES</h2></a>
+            <a href="#"><h2 id="he">HERBALESSENCES</h2></a>
+            <a href="#"><h2 id="el">ESTEELAUDER</h2></a>
+            <a href="#"><h2 id="bprc">BELTPARKWAYRUNCLUB</h2></a> -->
+            <div id="topLine">
+              <!-- <h2 id="but">BROOKLYNUNITEDTIES</h2> -->
+              <a href="#"><h2 id="but">BROOKLYNUNITEDTIES</h2></a>
+            </div>
+            <div id="secondLine">
+              <h4 id="he">HERBALESSENCES</h4>
+              <h4 id="el">ESTEELAUDER</h4>
+            </div>
+            <div id="thirdLine">
+              <a href="#"><h2 id="bprc">BELTPARKWAYRUNCLUB</h2></a>
+            </div>
+          </div>
+        </div>
+        <div id="projContPage" class="hidden"></div>
+
+        <div id="contactPage" class="hidden">
+          <div class="row" id="contactContTop">
+            <h3 style="margin: 0 auto; clear:both;">social networking</h3>
+            <br />
+            <div class="links">
+              <a href="#" class="fa fa-youtube"></a>
+              <a
+                href="mailto:takethiszhireously@gmail.com"
+                class="fa fa-envelope"
+              ></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a
+                href="https://www.linkedin.com/in/zhi-liang/"
+                class="fa fa-linkedin"
+              ></a>
+            </div>
+          </div>
+          <h3 style="margin: 0 auto;">express mail</h3>
+          <br />
+          <form
+            id="emailstuff"
+            method="POST"
+            action="https://formspree.io/takethiszhireously@gmail.com"
+          >
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="hidden"
+                name="_subject"
+                value="Email from zhiwliang.com"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                name="message"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit">send!!!</button>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -1,290 +1,325 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    /*background-color: #ADD8E6;*/
+  font-family: "Open Sans", sans-serif;
+  /*background-color: #ADD8E6;*/
 }
 
 body,
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 h1,
 h3 {
-    font-weight: bold;
-    font-stretch: expanded;
+  font-weight: bold;
+  font-stretch: expanded;
 }
 
 textarea {
-    resize: none !important;
+  resize: none !important;
+}
+
+a > h2 {
+  font-size: 4rem !important;
+  line-height: 0.7 !important;
 }
 
 .upper {
-    text-transform: uppercase;
-    letter-spacing: .3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 #home {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+#projMenu {
+  padding: 5em;
+}
+
+#secondLine > h4 {
+  display: inline !important;
+  font-size: 2.8rem;
+}
+
+#bprc:hover {
+  color: mediumslateblue;
+}
+
+#he:hover {
+  color: coral;
+}
+
+#el:hover {
+  color: goldenrod;
 }
 
 .sidenav {
-    margin-top: 4em;
-    height: 100%;
-    width: 12em;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    text-align: right;
-    text-transform: uppercase;
+  margin-top: 4em;
+  height: 100%;
+  width: 12em;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    display: block;
-    letter-spacing: .4rem;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  letter-spacing: 0.4rem;
 }
 
 #contentCont {
-    /*position: absolute;*/
-    top: 0;
-    bottom: 0;
-    margin-top: 4.5em;
-    /*margin-left: 12em;*/
-    text-align: center;
-    font-size: 15px;
-    overflow-y:scroll;
-    overflow-x:hidden;
+  /*position: absolute;*/
+  top: 0;
+  bottom: 0;
+  margin-top: 4.5em;
+  /*margin-left: 12em;*/
+  text-align: center;
+  font-size: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #pageTitle {
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: .4rem;
-    position: absolute;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  /* position: absolute; */
+}
+#projContPage {
+  padding-top: 5em;
 }
 
 #contentPage {
-    margin: 0 auto;
-    margin-top: 1.5em;
-    background-color: #ADD8E6;
-    height: 32em;
-    width: calc(100% - 31.5em);
-    display: table;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: scroll;
-    margin-left: 16em;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  background-color: #add8e6;
+  height: 32em;
+  width: calc(100% - 31.5em);
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: scroll;
+  margin-left: 16em;
 }
 
-img{
-    transition: background-image 0.2s ease-in-out;
-
+img {
+  transition: background-image 0.2s ease-in-out;
 }
 
 #contentPage:hover {
-    transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 p {
-    color: white;
+  color: white;
 }
 
 #aboutPage {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-
 #nyc {
-    color: blue;
+  color: blue;
 }
 
 #mediaArts {
-    color: red;
+  color: red;
 }
 
 #creative {
-    color: yellow;
+  color: yellow;
 }
 
 #design_text {
-    color: green;
+  color: green;
 }
 
 #making_text {
-    color: turquoise;
+  color: turquoise;
 }
 
 #thinking_text {
-    color: magenta;
+  color: magenta;
 }
 
 #cool_text {
-    color: brown;
+  color: brown;
 }
 
 .soft-pad {
-    padding-left: 1px !important;
-    padding-right: 1px !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
 }
 
 span:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block !important;
+  display: block !important;
 }
 
 a > img {
-    height: 65%;
+  height: 65%;
 }
 #photoPage {
-    overflow: scroll;
-    height: 480px;
-    padding-top: 5em;
+  overflow: scroll;
+  height: 480px;
+  padding-top: 5em;
 }
 
-#facesPage, #spacesPage, #placesPage, #sneakersPage, #fashionPage, #othersPage {
-    padding-top: 5em;
-
+#facesPage,
+#spacesPage,
+#placesPage,
+#sneakersPage,
+#fashionPage,
+#othersPage {
+  padding-top: 5em;
 }
 
 .photoCopy {
-    overflow: scroll;
-    height: 480px;
+  overflow: scroll;
+  height: 480px;
 }
 
 .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .colPhoto {
-    height: 225px !important;
-    padding: 0 !important;
-    margin: 5px;
-    /*background-color: #777;*/
+  height: 225px !important;
+  padding: 0 !important;
+  margin: 5px;
+  /*background-color: #777;*/
 }
 
 .imageCont {
-    height: 200px;
-    width: 300px;
-    /*background-color: #999;*/
-    margin: 5px;
+  height: 200px;
+  width: 300px;
+  /*background-color: #999;*/
+  margin: 5px;
 }
 
 .horiNav {
-    margin-top: 30px;
-    visibility: hidden;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    min-width: 91em;
+  /* margin-top: 30px; */
+  visibility: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  min-width: 91em;
 }
 
-.horiNav>li {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+.horiNav > li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .horiNav a {
-    color: #ADD8E6 !important;
-    
+  color: #add8e6 !important;
 }
 
 #videoPage {
-    padding-top: 5em;
+  padding-top: 5em;
 }
 
 #contactPage {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
-.links {}
+.links {
+}
 
 .fa {
-    padding: 17px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+  padding: 17px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .fa:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .fa-youtube {
-    background: black;
-    color: #FF0000;
+  background: black;
+  color: #ff0000;
 }
 
 .fa-envelope {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .fa-instagram {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .fa-linkedin {
-    background: black;
-    color: yellow;
+  background: black;
+  color: yellow;
 }
 
 a:hover {
-    color: inherit !important;
-    text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 #emailstuff {
-    padding-left: 50px;
-    padding-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #contactContTop {
-    display: block !important;
-    margin-bottom: 5em;
+  display: block !important;
+  margin-bottom: 5em;
 }
 
 .transition {
-    transition: background-image 5s cubic-bezier(0.4, 0, 1, 1);
+  transition: background-image 5s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .carousel-indicators {
-    bottom: -27px !important;
+  bottom: -27px !important;
 }
 
 .col2 {
-    float: left;
-    width: 25%;
-    padding: 5px;
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+#projContPage > div > div > a > img {
+  height: 120%;
 }
